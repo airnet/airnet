@@ -1,7 +1,7 @@
 ![airnet](http://i.imgur.com/bcj4OWt.png)
 ======
 
-decentralized, secure, gossip based p2p networking
+decentralized, secure, p2p mesh networking
 
 goals:
   - transport agnostic (radio transceiver, internet, etc.)

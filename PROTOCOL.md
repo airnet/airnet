@@ -41,3 +41,8 @@ There are some rules in certain situations:
 
  - If a network connection is made the client making the connection should send the beacon first.
  - Beacons should have an expiry.
+
+Banded Messages
+===============
+
+Messages post-handshake are RSA encrypted, and encoded using ProtoBuf.
