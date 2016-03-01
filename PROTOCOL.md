@@ -35,12 +35,13 @@ Handshake
  1. A: Beacon
  2. B -> A: Init challenge.
  3. A -> B: Challenge response & return challenge.
- 4. B -> A: Association confirmation.
+ 4. B -> A: Challenge response
+ 5: A -> B: Association confirmation
+ 6: B -> A: Association confirmation
 
 There are some rules in certain situations:
 
  - If a network connection is made the client making the connection should send the beacon first.
- - Beacons should have an expiry.
 
 Banded Messages
 ===============
