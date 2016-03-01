@@ -45,9 +45,3 @@ Once a node has a list of routes to a desired target, sorted by most efficient (
 A message is sent to the first node in the route, which looks at the routed request (signed by the originator's private key), finds the next node in its active connections, and passes it along. If at any point the next node in the chain has been lost, the node that cannot find the next node in the chain will create a new routed request going the opposite direction to return the failed route.
 
 There is no proof of delivery for any message through the system. If a client receives a proof of failure (route request failure), it will discard that route and any others that contain the connection between the failed node and the disconnected node, and attempt the next. 
-
-Key Exchanges
-============
-
-Secure communication can be built on top of the Routed Requests platform. A key exchange can simply be performed through the routed requests platform in order to facilitate secure communications between two nodes.
-

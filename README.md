@@ -21,6 +21,8 @@ the airnet protocol defines a transport agnostic way of communicating. no direct
 
 a target is identified by the sha256 hash of its public key. a connection can be opened to the target routing packets through the network via a SOCKS5 proxy, where the target hostname is specified as "hash.air"
 
+hashes of public keys are also used to build IPV4 and IPV6 addresses for devices, such that devices can be treated as traditional TCP or UDP endpoints.
+
 messages are queued and sent as a route is available to the target.
 
 zeromq is used as the message queue backing the system, and for all connections.
